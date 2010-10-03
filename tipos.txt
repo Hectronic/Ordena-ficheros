@@ -1,0 +1,19 @@
+.zip-Carpetas Comprimidas
+.rar-Carpetas Comprimidas
+.gz-Carpetas Comprimidas
+.7zip-Carpetas Comprimidas
+.mp3-Musica
+.jpg-Fotos
+.png-Imagenes
+.gif-Imagenes
+.doc-Documentos
+.pdf-Documentos
+.avi-Videos
+.srt-Videos
+.iso-Imagen
+.img-Imagen
+.ppt-Documentos
+.torrent-Descargas
+.exe-Unknow
+.txt-Unknow
+.py-Unknow
