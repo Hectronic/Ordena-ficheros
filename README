@@ -1,0 +1,15 @@
+Ordena los ficheros de un directorio en funcion de su extensión
+
+Versión 0.3 alpha
+
+Para ejecutar :
+
+python ordenar.py /ruta/al/directorio/a/ordenar
+
+por ejemplo
+
+python ordenar.py /home/usuario/Descargas
+
+Sugerencias:
+
+Crea una tarea programada que periodicamente ordene tu carpeta de descargas

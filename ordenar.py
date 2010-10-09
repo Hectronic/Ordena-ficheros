@@ -1,14 +1,11 @@
-#Version 0.2 alpha
-#I haven't decide the license for this code, so temporally all rigths reserved. 
-
+#Version 0.3 alpha
+#I do not choose the license for this software yet. Temporally all rights reserved
 import os
 import shutil
 import sys
 
 tipos = {}
 desconocidos = []
-
-    
 
 def ordenar(extension, fichero):
     if(extension in tipos):
@@ -36,8 +33,6 @@ def recorrerFicheros(dir):
     ficheros = os.listdir(dir)
     for i in range(len(ficheros)):
         fichero = dir + "/" + ficheros[i]
-        print fichero
-        print sys.argv[0]
         if(fichero != sys.argv[0]):
             ini = fichero.rfind('.')
             fin = len(fichero)
@@ -46,9 +41,9 @@ def recorrerFicheros(dir):
                 ordenar(extension, fichero)
                 os.chdir(dir)   
 
-
 def main():
-    
+    if(len(sys.argv) > 1):
+        os.chdir(sys.argv[1]);
     cargarTipos() 
     dir = os.getcwd()
     recorrerFicheros(dir)
@@ -58,6 +53,7 @@ def main():
         ficheroTipos.write(extension + '-' + 'Unknow\n')
     ficheroTipos.close()
 
-main()
+if __name__ == "__main__":
+    main()
             
  
